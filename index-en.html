@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalnyesgrowth — Websites That Get You More Customers</title>
-  <meta name="description" content="We build professional websites for local businesses that generate real customers — in 10 days or less.">
+  <meta name="description" content="We build professional websites for local businesses that generate real customers in 10 days or less. Starting at $450.">
   <meta property="og:title" content="Kalnyesgrowth — Websites That Get You More Customers">
   <meta property="og:description" content="Websites that work for you 24/7. From $450. In 10 days.">
   <meta property="og:type" content="website">
@@ -22,98 +22,49 @@
       --bg-2:     #F8FAFC;
       --bg-3:     #F1F5F9;
       --dark:     #0F172A;
-      --text:     #1E293B;
-      --gray:     #475569;
+      --text:     #334155;
+      --gray:     #64748B;
       --gray-dim: #94A3B8;
       --border:   #E2E8F0;
       --blue:     #1D4ED8;
-      --blue-lt:  rgba(29,78,216,0.1);
       --orange:   #F05A1A;
       --orange-dk:#D64D0E;
       --font:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
-    body {
-      font-family: var(--font);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
     button { font-family: var(--font); border: none; cursor: pointer; background: none; }
     ::selection { background: var(--blue); color: white; }
-
     .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
-    .section { padding: 100px 0; }
 
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gray-dim);
-      margin-bottom: 20px;
-    }
+    /* EYEBROW */
+    .eyebrow { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font);
-      font-size: 0.88rem;
-      font-weight: 600;
-      border-radius: 100px;
-      padding: 11px 22px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 1px solid transparent;
-      white-space: nowrap;
-      line-height: 1;
-    }
+    /* BUTTONS */
+    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font); font-size: 0.88rem; font-weight: 600; border-radius: 100px; padding: 11px 22px; cursor: pointer; transition: all 0.2s; border: 1px solid transparent; white-space: nowrap; line-height: 1; }
     .btn-orange { background: var(--orange); color: white; border-color: var(--orange); }
-    .btn-orange:hover { background: var(--orange-dk); border-color: var(--orange-dk); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(240,90,26,0.35); }
+    .btn-orange:hover { background: var(--orange-dk); border-color: var(--orange-dk); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(240,90,26,0.3); }
     .btn-blue { background: var(--blue); color: white; border-color: var(--blue); }
     .btn-blue:hover { background: #1639a8; transform: translateY(-1px); }
-    .btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
-    .btn-ghost:hover { border-color: var(--gray-dim); background: var(--bg-3); }
-    .btn-ghost-white { background: transparent; color: white; border-color: rgba(255,255,255,0.3); }
-    .btn-ghost-white:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.1); }
+    .btn-ghost { background: transparent; color: var(--dark); border-color: #CBD5E1; }
+    .btn-ghost:hover { border-color: #94A3B8; background: var(--bg-3); }
+    .btn-ghost-white { background: transparent; color: white; border-color: rgba(255,255,255,0.35); }
+    .btn-ghost-white:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.1); }
     .btn-lg { font-size: 0.95rem; padding: 14px 28px; }
 
     /* ANNOUNCE BAR */
-    .announce-bar {
-      background: var(--bg-2);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--gray);
-    }
+    .announce-bar { background: var(--dark); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 10px 32px; display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; color: rgba(255,255,255,0.6); }
     .announce-bar-center { display: flex; align-items: center; gap: 12px; }
-    .announce-new { background: var(--blue); color: white; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 2px 8px; border-radius: 4px; }
-    .announce-bar a { color: var(--dark); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; font-size: 0.8rem; }
-    .announce-right { display: flex; align-items: center; gap: 6px; color: var(--gray-dim); font-size: 0.78rem; }
+    .announce-new { background: var(--orange); color: white; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 2px 8px; border-radius: 4px; }
+    .announce-bar a { color: white; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .announce-right { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; color: rgba(255,255,255,0.4); }
     .announce-dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; }
 
     /* NAV */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 200;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      transition: border-color 0.2s;
-    }
-    nav.scrolled { border-color: #D4D9E1; box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
+    nav { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); transition: all 0.2s; }
+    nav.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
     .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: 800; color: var(--dark); letter-spacing: -0.02em; }
     .nav-logo-icon { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; border: 2px solid var(--blue); border-radius: 4px; font-size: 0.7rem; font-weight: 900; color: var(--blue); flex-shrink: 0; }
@@ -123,277 +74,55 @@
     .nav-right { display: flex; align-items: center; gap: 10px; }
     .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
     .nav-burger span { display: block; width: 22px; height: 1.5px; background: var(--dark); border-radius: 2px; transition: all 0.25s; }
-
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 64px; left: 0; right: 0; bottom: 0;
-      background: var(--bg);
-      z-index: 199;
-      padding: 32px;
-      flex-direction: column;
-      border-top: 1px solid var(--border);
-    }
+    .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: white; z-index: 199; padding: 32px; flex-direction: column; border-top: 1px solid var(--border); }
     .mobile-menu.open { display: flex; }
     .mobile-menu a { font-size: 1.1rem; font-weight: 600; color: var(--gray); padding: 18px 0; border-bottom: 1px solid var(--border); transition: color 0.15s; }
     .mobile-menu a:hover { color: var(--dark); }
     .mobile-menu-footer { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
 
-    /* HERO */
-    .hero { padding: 64px 0 80px; background: var(--bg); position: relative; overflow: hidden; }
+    /* HERO — above-fold content uses CSS animations, NOT IntersectionObserver */
+    .hero { padding: 80px 0 90px; background: var(--bg); position: relative; overflow: hidden; }
     .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-    .hero-blob { position: absolute; border-radius: 50%; filter: blur(90px); will-change: transform; }
-    .hero-blob-1 { width: 640px; height: 640px; background: radial-gradient(circle, #2563EB, #1e40af); opacity: 0.06; top: -220px; left: -120px; animation: blob1 14s ease-in-out infinite; }
-    .hero-blob-2 { width: 480px; height: 480px; background: radial-gradient(circle, #1d51c8, #0f2d80); opacity: 0.05; top: 40%; right: -80px; animation: blob2 18s ease-in-out infinite; }
-    .hero-blob-3 { width: 320px; height: 320px; background: radial-gradient(circle, #F05A1A, #c2410c); opacity: 0.04; bottom: -60px; left: 38%; animation: blob3 11s ease-in-out infinite; }
-    @keyframes blob1 { 0%,100% { transform: translate(0,0) scale(1); } 40% { transform: translate(40px,-60px) scale(1.07); } 70% { transform: translate(-25px,35px) scale(0.95); } }
-    @keyframes blob2 { 0%,100% { transform: translate(0,0) scale(1); } 35% { transform: translate(-50px,40px) scale(1.06); } 65% { transform: translate(30px,-30px) scale(0.93); } }
-    @keyframes blob3 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-40px,-30px) scale(1.12); } }
-    .hero-grid-bg {
-      position: absolute; inset: 0;
-      background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px);
-      background-size: 38px 38px;
-      mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5) 80%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5) 80%, transparent 100%);
-    }
-    .hero-noise { position: absolute; inset: 0; opacity: 0.012; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 200px 200px; }
+    .hero-blob { position: absolute; border-radius: 50%; filter: blur(80px); }
+    .hero-blob-1 { width: 600px; height: 600px; background: radial-gradient(circle, #3B82F6, #1e40af); opacity: 0.08; top: -180px; left: -100px; animation: blob1 14s ease-in-out infinite; }
+    .hero-blob-2 { width: 440px; height: 440px; background: radial-gradient(circle, #1d51c8, #0f2d80); opacity: 0.06; top: 40%; right: -60px; animation: blob2 18s ease-in-out infinite; }
+    .hero-blob-3 { width: 300px; height: 300px; background: radial-gradient(circle, #F05A1A, #c2410c); opacity: 0.05; bottom: -40px; left: 40%; animation: blob3 11s ease-in-out infinite; }
+    @keyframes blob1 { 0%,100% { transform: translate(0,0) scale(1); } 40% { transform: translate(40px,-50px) scale(1.06); } 70% { transform: translate(-20px,30px) scale(0.96); } }
+    @keyframes blob2 { 0%,100% { transform: translate(0,0) scale(1); } 35% { transform: translate(-45px,35px) scale(1.05); } 65% { transform: translate(25px,-25px) scale(0.94); } }
+    @keyframes blob3 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-35px,-25px) scale(1.1); } }
+    .hero-grid-bg { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(15,23,42,0.06) 1px, transparent 1px); background-size: 40px 40px; mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.5) 75%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.5) 75%, transparent 100%); }
     .hero > .container { position: relative; z-index: 1; }
 
-    .hero-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 28px; }
-    .hero-title { font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; color: var(--dark); margin-bottom: 52px; max-width: 820px; }
+    /* Hero content uses CSS animation so it's NEVER invisible on page load */
+    .hero-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin-bottom: 28px; animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.05s both; }
+    .hero-title { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.06; letter-spacing: -0.03em; color: var(--dark); margin-bottom: 48px; max-width: 820px; animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.12s both; }
     .hero-title .blue { color: var(--blue); }
+    .hero-cards { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; margin-bottom: 36px; animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.2s both; }
+    .hero-stats { display: flex; gap: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.28s both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
 
-    .hero-cards { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; margin-bottom: 40px; }
-    .hero-card-left {
-      background: linear-gradient(140deg, #0B1D3A 0%, #1A3A7A 50%, #2563EB 100%);
-      border-radius: 16px; padding: 40px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-      min-height: 400px; position: relative; overflow: hidden;
-    }
-    .hero-card-left::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-      background: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='50%25'%3E%3Cstop offset='0%25' stop-color='%234B8EF5' stop-opacity='0.25'/%3E%3Cstop offset='100%25' stop-color='%230B1D3A' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cellipse cx='200' cy='180' rx='200' ry='160' fill='url(%23g)'/%3E%3C/svg%3E") center/cover no-repeat;
-      pointer-events: none;
-    }
-    .hero-card-left-sub { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; position: relative; }
-    .hero-card-left h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; color: white; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 16px; position: relative; }
-    .hero-card-left p { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.65; margin-bottom: 24px; max-width: 360px; position: relative; }
+    .hero-card-left { background: linear-gradient(140deg, #0B1D3A 0%, #1A3A7A 50%, #2563EB 100%); border-radius: 16px; padding: 40px; display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; position: relative; overflow: hidden; }
+    .hero-card-left::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, rgba(75,142,245,0.25) 0%, transparent 70%); pointer-events: none; }
+    .hero-card-left-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; position: relative; }
+    .hero-card-left h2 { font-size: clamp(1.3rem, 2.2vw, 1.9rem); font-weight: 800; color: white; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 14px; position: relative; }
+    .hero-card-left p { font-size: 0.88rem; color: rgba(255,255,255,0.58); line-height: 1.65; margin-bottom: 22px; max-width: 360px; position: relative; }
     .hero-card-left .btn { position: relative; }
-    .hero-card-right { border-radius: 16px; overflow: hidden; background: var(--bg-3); min-height: 400px; }
-    .hero-card-right img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .hero-card-right { border-radius: 16px; overflow: hidden; background: var(--bg-3); min-height: 380px; }
+    .hero-card-right img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 
-    .hero-stats { display: flex; gap: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-    .hero-stat { flex: 1; padding: 20px 28px; border-right: 1px solid var(--border); }
+    .hero-stat { flex: 1; padding: 20px 24px; border-right: 1px solid var(--border); background: white; }
     .hero-stat:last-child { border-right: none; }
-    .hero-stat-num { font-size: 1.8rem; font-weight: 900; color: var(--dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
+    .hero-stat-num { font-size: 1.75rem; font-weight: 900; color: var(--dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
     .hero-stat-num span { color: var(--blue); }
-    .hero-stat-label { font-size: 0.78rem; color: var(--gray); font-weight: 500; }
+    .hero-stat-label { font-size: 0.76rem; color: var(--gray); font-weight: 500; }
 
-    /* MARQUEE */
-    .marquee-section { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px 0; overflow: hidden; background: var(--bg-2); }
-    .marquee-label { text-align: center; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 18px; }
-    .marquee-track { display: flex; gap: 56px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 0 32px; }
-    .marquee-item { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #CBD5E1; white-space: nowrap; }
+    /* INDUSTRIES STRIP */
+    .industries-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 22px 0; background: var(--dark); }
+    .industries-label { text-align: center; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; }
+    .industries-track { display: flex; gap: 48px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 0 32px; }
+    .industries-item { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); white-space: nowrap; }
 
-    /* CASE STUDY CARDS */
-    .cases-section { padding: 80px 0; }
-    .cases-header { margin-bottom: 40px; }
-    .cases-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.025em; color: var(--dark); max-width: 680px; }
-    .cases-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-    .case-card { border-radius: 14px; overflow: hidden; border: 1px solid var(--border); transition: all 0.25s; }
-    .case-card:hover { transform: translateY(-4px); border-color: #CBD5E1; box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
-    .case-preview { height: 220px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; position: relative; }
-    .case-body { padding: 20px; background: white; }
-    .case-niche { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 6px; }
-    .case-name { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
-    .case-result { font-size: 0.82rem; color: var(--gray); line-height: 1.55; }
-    .case-blue   { background: linear-gradient(135deg, #0B1D3A, #2563EB); }
-    .case-green  { background: linear-gradient(135deg, #052e16, #16a34a); }
-    .case-orange { background: linear-gradient(135deg, #431407, #ea580c); }
-    .case-purple { background: linear-gradient(135deg, #2e1065, #7c3aed); }
-    .case-teal   { background: linear-gradient(135deg, #042f2e, #0d9488); }
-    .case-red    { background: linear-gradient(135deg, #450a0a, #dc2626); }
-
-    /* EXPERTISE / CAPABILITIES */
-    .expertise-section { padding: 100px 0; border-top: 1px solid var(--border); }
-    .expertise-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-bottom: 56px; }
-    .expertise-layout h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.025em; color: var(--dark); }
-    .expertise-layout p { font-size: 0.95rem; color: var(--gray); line-height: 1.75; margin-top: 20px; max-width: 420px; }
-    .capabilities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .cap-tile { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); position: relative; height: 164px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; padding: 20px; cursor: default; transition: all 0.25s; }
-    .cap-tile:hover { border-color: #CBD5E1; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
-    .cap-tile-bg { position: absolute; inset: 0; background: linear-gradient(140deg, #0B1D3A, #1e3a8a, #2563eb); opacity: 0.7; }
-    .cap-tile-bg-2 { background: linear-gradient(140deg, #052e16, #065f46, #10b981); opacity: 0.6; }
-    .cap-tile-bg-3 { background: linear-gradient(140deg, #1e1b4b, #3730a3, #6366f1); opacity: 0.65; }
-    .cap-tile-bg-4 { background: linear-gradient(140deg, #0c0a09, #1c1917, #44403c); opacity: 0.9; }
-    .cap-tile-bg-5 { background: linear-gradient(140deg, #042f2e, #0d9488, #5eead4); opacity: 0.55; }
-    .cap-tile-bg-6 { background: linear-gradient(140deg, #0f172a, #1e3a8a, #3b82f6); opacity: 0.6; }
-    .cap-tile-icon { position: relative; z-index: 1; width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.13); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .cap-tile-icon svg { width: 22px; height: 22px; fill: none; stroke: white; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-    .cap-tile-label { position: relative; font-size: 0.92rem; font-weight: 700; color: white; z-index: 1; line-height: 1.35; }
-
-    /* WORK LIST */
-    .work-section { padding: 100px 0; border-top: 1px solid var(--border); }
-    .work-header { margin-bottom: 20px; }
-    .work-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; max-width: 760px; }
-    .work-header p { font-size: 0.9rem; color: var(--gray); margin-top: 12px; max-width: 480px; line-height: 1.7; }
-    .work-list { margin-top: 48px; }
-    .work-row { display: grid; grid-template-columns: 56px 1fr 1fr auto; gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--border); transition: all 0.15s; }
-    .work-row:first-child { border-top: 1px solid var(--border); }
-    .work-row:hover .work-row-name { color: var(--blue); }
-    .work-icon { width: 48px; height: 48px; border-radius: 10px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; background: var(--bg-3); flex-shrink: 0; }
-    .work-row-name { font-size: 1rem; font-weight: 700; color: var(--dark); transition: color 0.15s; }
-    .work-row-city { font-size: 0.78rem; color: var(--gray-dim); margin-top: 2px; }
-    .work-row-result { font-size: 0.85rem; color: var(--gray); }
-    .work-row-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-dim); background: var(--bg-3); border: 1px solid var(--border); border-radius: 100px; padding: 4px 12px; white-space: nowrap; }
-
-    /* TESTIMONIAL — dark section for contrast */
-    .testimonial-section { padding: 100px 0; background: #0F172A; border-top: none; }
-    .testimonial-quote { font-size: clamp(1.6rem, 3.2vw, 2.6rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; max-width: 1000px; margin-bottom: 48px; }
-    .testimonial-quote::before { content: '"'; color: var(--blue); }
-    .testimonial-quote::after { content: '"'; color: var(--blue); }
-    .testimonial-meta { display: flex; align-items: center; gap: 16px; }
-    .test-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15); flex-shrink: 0; display: block; }
-    .test-meta-name { font-size: 0.9rem; font-weight: 700; color: #FFFFFF; }
-    .test-meta-biz { font-size: 0.78rem; color: rgba(255,255,255,0.45); margin-top: 1px; }
-    .test-dots { display: flex; gap: 8px; margin-left: auto; }
-    .test-dot { font-size: 0.75rem; color: rgba(255,255,255,0.3); font-weight: 600; letter-spacing: 0.05em; cursor: pointer; }
-    .test-dot.active { color: #FFFFFF; }
-    .test-dot-line { width: 32px; height: 1px; background: #FFFFFF; align-self: center; margin-left: 4px; }
-
-    /* PRICING */
-    .pricing-section { padding: 100px 0; border-top: 1px solid var(--border); }
-    .pricing-header { margin-bottom: 52px; }
-    .pricing-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; }
-    .pricing-header p { font-size: 0.9rem; color: var(--gray); margin-top: 12px; max-width: 480px; line-height: 1.7; }
-    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .price-card { border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; background: white; position: relative; display: flex; flex-direction: column; transition: border-color 0.2s; }
-    .price-card:hover { border-color: #CBD5E1; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
-    .price-card.featured { border-color: var(--blue); border-width: 2px; background: #F8FAFF; }
-    .price-card.featured:hover { border-color: #3b82f6; }
-    .popular-pill { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--blue); color: white; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 100px; white-space: nowrap; }
-    .pc-tier { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 8px; }
-    .pc-name { font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
-    .pc-desc { font-size: 0.82rem; color: var(--gray); line-height: 1.55; margin-bottom: 24px; }
-    .pc-price { font-size: 2rem; font-weight: 900; color: var(--dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 2px; }
-    .pc-price-sub { font-size: 0.75rem; color: var(--gray-dim); margin-bottom: 24px; }
-    .pc-divider { height: 1px; background: var(--border); margin: 20px 0; }
-    .pc-features { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; flex: 1; }
-    .pc-features li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.82rem; color: var(--gray); }
-    .pc-check { width: 14px; height: 14px; border-radius: 50%; background: var(--blue); flex-shrink: 0; margin-top: 2px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M3 7l2.5 2.5L11 4' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
-    .pc-btn { width: 100%; justify-content: center; }
-    .hosting-note { margin-top: 40px; max-width: 560px; padding: 20px 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-2); display: flex; align-items: center; gap: 14px; }
-    .hosting-note p { font-size: 0.83rem; color: var(--gray); line-height: 1.65; }
-    .hosting-note strong { color: var(--dark); }
-    .guarantee-strip { margin-top: 24px; max-width: 560px; padding: 18px 24px; border: 1px solid rgba(22,163,74,0.3); border-radius: 12px; background: rgba(22,163,74,0.05); display: flex; align-items: center; gap: 14px; }
-    .guarantee-strip .g-icon { font-size: 1.6rem; flex-shrink: 0; }
-    .guarantee-strip .g-title { font-size: 0.88rem; font-weight: 700; color: #16a34a; margin-bottom: 2px; }
-    .guarantee-strip .g-sub { font-size: 0.78rem; color: var(--gray); line-height: 1.55; }
-    .pc-price-tag { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #16a34a; background: rgba(22,163,74,0.1); border-radius: 100px; padding: 3px 10px; display: inline-block; margin-bottom: 12px; }
-
-    /* MONEY LOST SECTION — dark for chart visibility */
-    .money-section { padding: 100px 0; border-top: 1px solid var(--border); background: #0F172A; }
-    .money-header { text-align: center; margin-bottom: 64px; }
-    .money-header h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; line-height: 1.1; color: #FFFFFF; margin-bottom: 14px; }
-    .money-header p { font-size: 0.95rem; color: rgba(255,255,255,0.55); max-width: 520px; margin: 0 auto; line-height: 1.75; }
-    .money-header .eyebrow { color: rgba(255,255,255,0.3); }
-    .money-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
-    .money-card { background: #1E293B; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 28px; }
-    .donut-wrap { display: flex; align-items: center; justify-content: center; }
-    .donut-svg { width: 148px; height: 148px; transform: rotate(-90deg); }
-    .donut-track { stroke: rgba(255,255,255,0.07); }
-    .donut-ring { stroke-dasharray: 0 345; transition: stroke-dasharray 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s; }
-    .donut-center-text { transform: rotate(90deg); transform-origin: 70px 70px; }
-    .money-card.chart-active .donut-ring-1 { stroke-dasharray: 124 221; }
-    .bar-chart { display: flex; flex-direction: column; gap: 16px; }
-    .bar-group { display: flex; flex-direction: column; gap: 6px; }
-    .bar-label-row { display: flex; justify-content: space-between; align-items: center; }
-    .bar-label-text { font-size: 0.78rem; color: rgba(255,255,255,0.55); font-weight: 500; }
-    .bar-label-val { font-size: 0.78rem; font-weight: 700; color: #FFFFFF; }
-    .bar-label-val.green { color: #4ade80; }
-    .bar-track { height: 10px; background: rgba(255,255,255,0.07); border-radius: 100px; overflow: hidden; }
-    .bar-fill { height: 100%; border-radius: 100px; width: 0; transition: width 1.4s cubic-bezier(0.4,0,0.2,1) 0.5s; }
-    .bar-fill-bad  { background: linear-gradient(90deg, #ef4444, #f87171); }
-    .bar-fill-good { background: linear-gradient(90deg, #2563eb, #4ade80); }
-    .money-card.chart-active .bar-fill-bad  { width: 48%; }
-    .money-card.chart-active .bar-fill-good { width: 100%; }
-    .money-card-content { display: flex; flex-direction: column; gap: 12px; }
-    .money-accent { font-size: 2.8rem; font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
-    .money-card-title { font-size: 1.1rem; font-weight: 800; color: #FFFFFF; }
-    .money-card-desc { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
-    .money-loss-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.25); border-radius: 100px; padding: 6px 14px; font-size: 0.78rem; font-weight: 600; color: #fca5a5; width: fit-content; }
-    .money-gain-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 100px; padding: 6px 14px; font-size: 0.78rem; font-weight: 600; color: #86efac; width: fit-content; }
-    .money-stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; overflow: hidden; }
-    .msr-item { padding: 28px 28px; background: #1E293B; text-align: center; }
-    .msr-item:not(:last-child) { border-right: 1px solid rgba(255,255,255,0.08); }
-    .msr-num { font-size: 2.4rem; font-weight: 900; letter-spacing: -0.03em; color: #60A5FA; margin-bottom: 8px; }
-    .msr-label { font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
-
-    /* FAQ */
-    .faq-section { padding: 100px 0; border-top: 1px solid var(--border); }
-    .faq-header { text-align: center; margin-bottom: 56px; }
-    .faq-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); }
-    .faq-list { max-width: 700px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid var(--border); }
-    .faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 0.92rem; font-weight: 600; color: var(--gray); cursor: pointer; transition: color 0.15s; }
-    .faq-q:hover { color: var(--dark); }
-    .faq-toggle { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--gray-dim); flex-shrink: 0; transition: all 0.25s; line-height: 1; }
-    .faq-item.open .faq-toggle { background: var(--blue); border-color: var(--blue); color: white; transform: rotate(45deg); }
-    .faq-item.open .faq-q { color: var(--dark); }
-    .faq-a { display: none; padding: 0 40px 22px 0; font-size: 0.88rem; color: var(--gray); line-height: 1.8; }
-    .faq-item.open .faq-a { display: block; }
-
-    /* CONTACT */
-    .contact-section { padding: 100px 0; border-top: 1px solid var(--border); }
-    .contact-layout { display: grid; grid-template-columns: 1fr 480px; gap: 64px; align-items: start; }
-    .contact-left h2 { font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; margin-bottom: 16px; }
-    .contact-left p { font-size: 0.9rem; color: var(--gray); line-height: 1.75; margin-bottom: 32px; }
-    .contact-links { display: flex; flex-direction: column; gap: 10px; }
-    .clink { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-2); font-size: 0.86rem; font-weight: 600; color: var(--dark); transition: all 0.2s; }
-    .clink:hover { border-color: #CBD5E1; background: var(--bg-3); }
-    .clink-icon { font-size: 1.1rem; width: 30px; text-align: center; flex-shrink: 0; }
-    .clink-sub { font-size: 0.73rem; color: var(--gray-dim); font-weight: 400; display: block; }
-    .avail-box { border: 1px solid var(--border); border-radius: 10px; background: var(--bg-2); padding: 16px 18px; margin-top: 4px; }
-    .avail-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 4px; }
-    .avail-val { font-size: 1.4rem; font-weight: 900; color: var(--dark); letter-spacing: -0.02em; }
-    .avail-sub { font-size: 0.75rem; color: var(--gray-dim); margin-top: 2px; }
-    .contact-form { background: var(--bg-2); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
-    .contact-form h3 { font-size: 1.05rem; font-weight: 800; color: var(--dark); margin-bottom: 24px; }
-    .form-group { margin-bottom: 14px; }
-    .form-group label { display: block; font-size: 0.73rem; font-weight: 600; color: var(--gray); margin-bottom: 5px; letter-spacing: 0.04em; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; font-family: var(--font); font-size: 0.88rem; color: var(--dark); background: white; border: 1px solid var(--border); border-radius: 8px; padding: 11px 14px; outline: none; transition: all 0.15s; }
-    .form-group select option { background: white; color: var(--dark); }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(29,78,216,0.1); }
-    .form-group textarea { resize: vertical; min-height: 80px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .form-submit-btn { width: 100%; justify-content: center; font-size: 0.95rem; padding: 14px; }
-    .form-footnote { font-size: 0.72rem; color: var(--gray-dim); text-align: center; margin-top: 10px; }
-
-    /* FINAL CTA */
-    .cta-minimal { padding: 72px 0; border-top: 1px solid var(--border); }
-    .cta-minimal-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-    .cta-minimal h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; }
-    .cta-minimal-btns { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-    .cta-arrow-link { display: inline-flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: 700; color: var(--dark); transition: gap 0.2s; }
-    .cta-arrow-link:hover { gap: 12px; }
-    .cta-arrow { font-size: 1.2rem; transition: transform 0.2s; }
-    .cta-arrow-link:hover .cta-arrow { transform: translateX(3px); }
-
-    /* FOOTER — dark */
-    footer { background: #0F172A; border-top: none; padding: 64px 0 0; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 64px; }
-    .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: 800; color: #FFFFFF; margin-bottom: 12px; }
-    .footer-logo .logo-icon { width: 22px; height: 22px; border: 1.5px solid #60A5FA; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 900; color: #60A5FA; }
-    .footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.65; max-width: 220px; }
-    .footer-col h4 { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 14px; }
-    .footer-col a { display: block; font-size: 0.82rem; color: rgba(255,255,255,0.45); padding: 4px 0; transition: color 0.15s; }
-    .footer-col a:hover { color: #FFFFFF; }
-    .footer-wordmark { border-top: 1px solid rgba(255,255,255,0.06); padding: 32px 0 0; overflow: hidden; }
-    .footer-wordmark-text { font-size: clamp(4rem, 12vw, 10rem); font-weight: 900; letter-spacing: -0.04em; color: rgba(255,255,255,0.06); line-height: 0.85; user-select: none; white-space: nowrap; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-    .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.22); }
-
-    /* SCROLL REVEAL */
+    /* SCROLL REVEAL — only for below-fold elements */
     [data-reveal] { opacity: 0; transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
     [data-reveal="up"]    { transform: translateY(32px); }
     [data-reveal="left"]  { transform: translateX(-32px); }
@@ -407,58 +136,208 @@
     [data-delay="5"] { transition-delay: 0.35s; }
     [data-delay="6"] { transition-delay: 0.42s; }
 
-    /* RESPONSIVE */
-    @media (max-width: 1024px) {
-      .hero-cards { grid-template-columns: 1fr 1fr; }
-      .expertise-layout { grid-template-columns: 1fr; gap: 32px; }
-      .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
-      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
-    }
-    @media (max-width: 860px) {
-      .section { padding: 72px 0; }
-      .announce-bar { display: none; }
-      .nav-links, .nav-cta-desk { display: none; }
-      .nav-burger { display: flex; }
-      .hero { padding: 48px 0 64px; }
-      .hero-cards { grid-template-columns: 1fr; }
-      .hero-card-right { min-height: 280px; }
-      .hero-stats { flex-direction: column; border-radius: 10px; }
-      .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
-      .hero-stat:last-child { border-bottom: none; }
-      .cases-grid { grid-template-columns: 1fr 1fr; }
-      .expertise-layout { grid-template-columns: 1fr; }
-      .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
-      .work-row { grid-template-columns: 48px 1fr auto; }
-      .work-row-result { display: none; }
-      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
-      .cta-minimal-inner { flex-direction: column; align-items: flex-start; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-      .money-grid { grid-template-columns: 1fr; }
-      .money-stats-row { grid-template-columns: 1fr; }
-      .msr-item:not(:last-child) { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    }
-    @media (max-width: 560px) {
-      .container { padding: 0 20px; }
-      .hero-title { font-size: 2.1rem; }
-      .cases-grid { grid-template-columns: 1fr; }
-      .capabilities-grid { grid-template-columns: 1fr 1fr; }
-      .work-row { grid-template-columns: 40px 1fr; }
-      .work-row-tag { display: none; }
-      .footer-top { grid-template-columns: 1fr; }
-      .form-row { grid-template-columns: 1fr; }
-      .footer-wordmark-text { font-size: 3.5rem; }
-      .testimonial-quote { font-size: 1.4rem; }
-    }
+    /* MONEY LOST — dark section */
+    .money-section { padding: 100px 0; background: #0F172A; }
+    .money-header { text-align: center; margin-bottom: 64px; }
+    .money-eyebrow { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; }
+    .money-header h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; line-height: 1.1; color: #FFFFFF; margin-bottom: 14px; }
+    .money-header p { font-size: 0.95rem; color: rgba(255,255,255,0.5); max-width: 520px; margin: 0 auto; line-height: 1.75; }
+    .money-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    .money-card { background: #1E293B; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 28px; }
+    .donut-wrap { display: flex; align-items: center; justify-content: center; }
+    .donut-svg { width: 148px; height: 148px; transform: rotate(-90deg); }
+    .donut-track { stroke: rgba(255,255,255,0.07); }
+    .donut-ring { stroke-dasharray: 0 345; transition: stroke-dasharray 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s; }
+    .donut-center-text { transform: rotate(90deg); transform-origin: 70px 70px; }
+    .money-card.chart-active .donut-ring-1 { stroke-dasharray: 124 221; }
+    .bar-chart { display: flex; flex-direction: column; gap: 16px; }
+    .bar-group { display: flex; flex-direction: column; gap: 6px; }
+    .bar-label-row { display: flex; justify-content: space-between; align-items: center; }
+    .bar-label-text { font-size: 0.78rem; color: rgba(255,255,255,0.5); font-weight: 500; }
+    .bar-label-val { font-size: 0.78rem; font-weight: 700; color: #FFFFFF; }
+    .bar-label-val.green { color: #4ade80; }
+    .bar-track { height: 10px; background: rgba(255,255,255,0.07); border-radius: 100px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 100px; width: 0; transition: width 1.4s cubic-bezier(0.4,0,0.2,1) 0.5s; }
+    .bar-fill-bad { background: linear-gradient(90deg, #ef4444, #f87171); }
+    .bar-fill-good { background: linear-gradient(90deg, #2563eb, #4ade80); }
+    .money-card.chart-active .bar-fill-bad { width: 48%; }
+    .money-card.chart-active .bar-fill-good { width: 100%; }
+    .money-card-content { display: flex; flex-direction: column; gap: 12px; }
+    .money-accent { font-size: 2.8rem; font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
+    .money-card-title { font-size: 1.1rem; font-weight: 800; color: #FFFFFF; }
+    .money-card-desc { font-size: 0.85rem; color: rgba(255,255,255,0.52); line-height: 1.7; }
+    .money-loss-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.25); border-radius: 100px; padding: 6px 14px; font-size: 0.78rem; font-weight: 600; color: #fca5a5; width: fit-content; }
+    .money-gain-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 100px; padding: 6px 14px; font-size: 0.78rem; font-weight: 600; color: #86efac; width: fit-content; }
+    .money-stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; overflow: hidden; }
+    .msr-item { padding: 28px; background: #1E293B; text-align: center; }
+    .msr-item:not(:last-child) { border-right: 1px solid rgba(255,255,255,0.08); }
+    .msr-num { font-size: 2.4rem; font-weight: 900; letter-spacing: -0.03em; color: #60A5FA; margin-bottom: 8px; }
+    .msr-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+    /* CASE CARDS */
+    .cases-section { padding: 80px 0; border-top: 1px solid var(--border); }
+    .cases-header { margin-bottom: 40px; }
+    .section-title { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.025em; color: var(--dark); max-width: 700px; margin-top: 4px; }
+    .cases-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    .case-card { border-radius: 14px; overflow: hidden; border: 1px solid var(--border); transition: all 0.25s; }
+    .case-card:hover { transform: translateY(-4px); border-color: #CBD5E1; box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .case-body { padding: 20px; background: white; }
+    .case-niche { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 6px; }
+    .case-name { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .case-result { font-size: 0.82rem; color: var(--gray); line-height: 1.55; }
+    .case-blue   { background: linear-gradient(135deg, #0B1D3A, #2563EB); }
+    .case-green  { background: linear-gradient(135deg, #052e16, #16a34a); }
+    .case-orange { background: linear-gradient(135deg, #431407, #ea580c); }
+    .case-purple { background: linear-gradient(135deg, #2e1065, #7c3aed); }
+    .case-teal   { background: linear-gradient(135deg, #042f2e, #0d9488); }
+    .case-red    { background: linear-gradient(135deg, #450a0a, #dc2626); }
+
+    /* EXPERTISE */
+    .expertise-section { padding: 100px 0; border-top: 1px solid var(--border); background: var(--bg-2); }
+    .expertise-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-bottom: 56px; }
+    .expertise-layout h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.025em; color: var(--dark); }
+    .expertise-layout p { font-size: 0.95rem; color: var(--gray); line-height: 1.75; margin-top: 20px; max-width: 420px; }
+    .capabilities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .cap-tile { border-radius: 12px; overflow: hidden; border: 1px solid transparent; position: relative; height: 164px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; padding: 20px; cursor: default; transition: all 0.25s; }
+    .cap-tile:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .cap-tile-bg  { position: absolute; inset: 0; background: linear-gradient(140deg, #0B1D3A, #1e3a8a, #2563eb); }
+    .cap-tile-bg-2 { background: linear-gradient(140deg, #052e16, #065f46, #10b981); }
+    .cap-tile-bg-3 { background: linear-gradient(140deg, #1e1b4b, #3730a3, #6366f1); }
+    .cap-tile-bg-4 { background: linear-gradient(140deg, #1c1917, #44403c, #78716c); }
+    .cap-tile-bg-5 { background: linear-gradient(140deg, #042f2e, #0d9488, #5eead4); }
+    .cap-tile-bg-6 { background: linear-gradient(140deg, #0f172a, #1e3a8a, #3b82f6); }
+    .cap-tile-icon { position: relative; z-index: 1; width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .cap-tile-icon svg { width: 22px; height: 22px; fill: none; stroke: white; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .cap-tile-label { position: relative; font-size: 0.92rem; font-weight: 700; color: white; z-index: 1; line-height: 1.35; }
+
+    /* PROCESS */
+    .work-section { padding: 100px 0; border-top: 1px solid var(--border); }
+    .work-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; max-width: 760px; margin-top: 4px; }
+    .work-header p { font-size: 0.9rem; color: var(--gray); margin-top: 12px; max-width: 480px; line-height: 1.7; }
+    .work-list { margin-top: 48px; }
+    .work-row { display: grid; grid-template-columns: 56px 1fr 1fr auto; gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--border); transition: all 0.15s; }
+    .work-row:first-child { border-top: 1px solid var(--border); }
+    .work-row:hover .work-row-name { color: var(--blue); }
+    .work-icon { width: 48px; height: 48px; border-radius: 10px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; background: white; flex-shrink: 0; }
+    .work-row-name { font-size: 1rem; font-weight: 700; color: var(--dark); transition: color 0.15s; }
+    .work-row-city { font-size: 0.78rem; color: var(--gray-dim); margin-top: 2px; }
+    .work-row-result { font-size: 0.85rem; color: var(--gray); }
+    .work-row-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-dim); background: var(--bg-3); border: 1px solid var(--border); border-radius: 100px; padding: 4px 12px; white-space: nowrap; }
+
+    /* TESTIMONIAL — dark */
+    .testimonial-section { padding: 100px 0; background: #0F172A; }
+    .testimonial-quote { font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; max-width: 1000px; margin-bottom: 48px; }
+    .testimonial-quote::before { content: '"'; color: #60A5FA; }
+    .testimonial-quote::after { content: '"'; color: #60A5FA; }
+    .testimonial-meta { display: flex; align-items: center; gap: 16px; }
+    .test-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15); flex-shrink: 0; }
+    .test-meta-name { font-size: 0.9rem; font-weight: 700; color: #FFFFFF; }
+    .test-meta-biz { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-top: 1px; }
+    .test-dots { display: flex; gap: 8px; margin-left: auto; }
+    .test-dot { font-size: 0.75rem; color: rgba(255,255,255,0.3); font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: color 0.15s; }
+    .test-dot.active { color: #FFFFFF; }
+    .test-dot-line { width: 32px; height: 1px; background: rgba(255,255,255,0.2); align-self: center; margin-left: 4px; }
+
+    /* PRICING */
+    .pricing-section { padding: 100px 0; border-top: 1px solid var(--border); }
+    .pricing-header { margin-bottom: 52px; }
+    .pricing-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; margin-top: 4px; }
+    .pricing-header p { font-size: 0.9rem; color: var(--gray); margin-top: 12px; max-width: 480px; line-height: 1.7; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .price-card { border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; background: white; position: relative; display: flex; flex-direction: column; transition: all 0.2s; }
+    .price-card:hover { border-color: #CBD5E1; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    .price-card.featured { border-color: var(--blue); border-width: 2px; background: #F5F8FF; }
+    .popular-pill { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--blue); color: white; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 100px; white-space: nowrap; }
+    .pc-tier { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 8px; }
+    .pc-name { font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+    .pc-desc { font-size: 0.82rem; color: var(--gray); line-height: 1.55; margin-bottom: 20px; }
+    .pc-price { font-size: 2.2rem; font-weight: 900; color: var(--dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 2px; }
+    .pc-price-sub { font-size: 0.75rem; color: var(--gray-dim); margin-bottom: 20px; }
+    .pc-divider { height: 1px; background: var(--border); margin: 16px 0; }
+    .pc-features { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; flex: 1; }
+    .pc-features li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.82rem; color: var(--gray); }
+    .pc-check { width: 14px; height: 14px; border-radius: 50%; background: var(--blue); flex-shrink: 0; margin-top: 2px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M3 7l2.5 2.5L11 4' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+    .pc-btn { width: 100%; justify-content: center; }
+    .pc-price-tag { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #16a34a; background: rgba(22,163,74,0.1); border-radius: 100px; padding: 3px 10px; display: inline-block; margin-bottom: 12px; }
+    .hosting-note { margin-top: 40px; max-width: 560px; padding: 20px 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-2); display: flex; align-items: center; gap: 14px; }
+    .hosting-note p { font-size: 0.83rem; color: var(--gray); line-height: 1.65; }
+    .hosting-note strong { color: var(--dark); }
+    .guarantee-strip { margin-top: 20px; max-width: 560px; padding: 18px 24px; border: 1px solid rgba(22,163,74,0.25); border-radius: 12px; background: rgba(22,163,74,0.04); display: flex; align-items: center; gap: 14px; }
+    .guarantee-strip .g-icon { font-size: 1.6rem; flex-shrink: 0; }
+    .guarantee-strip .g-title { font-size: 0.88rem; font-weight: 700; color: #16a34a; margin-bottom: 2px; }
+    .guarantee-strip .g-sub { font-size: 0.78rem; color: var(--gray); line-height: 1.55; }
+
+    /* FAQ */
+    .faq-section { padding: 100px 0; border-top: 1px solid var(--border); background: var(--bg-2); }
+    .faq-header { text-align: center; margin-bottom: 56px; }
+    .faq-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); margin-top: 4px; }
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); background: white; }
+    .faq-item:first-child { border-top: 1px solid var(--border); border-radius: 12px 12px 0 0; }
+    .faq-item:last-child { border-radius: 0 0 12px 12px; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; font-size: 0.92rem; font-weight: 600; color: var(--text); cursor: pointer; transition: color 0.15s; }
+    .faq-q:hover { color: var(--dark); }
+    .faq-toggle { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--gray-dim); flex-shrink: 0; transition: all 0.25s; line-height: 1; }
+    .faq-item.open .faq-toggle { background: var(--blue); border-color: var(--blue); color: white; transform: rotate(45deg); }
+    .faq-item.open .faq-q { color: var(--dark); }
+    .faq-a { display: none; padding: 0 24px 20px; font-size: 0.88rem; color: var(--gray); line-height: 1.8; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* CONTACT */
+    .contact-section { padding: 100px 0; border-top: 1px solid var(--border); }
+    .contact-layout { display: grid; grid-template-columns: 1fr 460px; gap: 64px; align-items: start; }
+    .contact-left h2 { font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 900; letter-spacing: -0.025em; color: var(--dark); line-height: 1.1; margin-bottom: 14px; margin-top: 4px; }
+    .contact-left p { font-size: 0.9rem; color: var(--gray); line-height: 1.75; margin-bottom: 28px; }
+    .contact-links { display: flex; flex-direction: column; gap: 10px; }
+    .clink { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: white; font-size: 0.86rem; font-weight: 600; color: var(--dark); transition: all 0.2s; }
+    .clink:hover { border-color: #CBD5E1; background: var(--bg-3); }
+    .clink-icon { font-size: 1.1rem; width: 30px; text-align: center; flex-shrink: 0; }
+    .clink-sub { font-size: 0.73rem; color: var(--gray-dim); font-weight: 400; display: block; }
+    .avail-box { border: 1px solid var(--border); border-radius: 10px; background: white; padding: 16px 18px; }
+    .avail-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-dim); margin-bottom: 4px; }
+    .avail-val { font-size: 1.4rem; font-weight: 900; color: var(--dark); letter-spacing: -0.02em; }
+    .avail-sub { font-size: 0.75rem; color: var(--gray-dim); margin-top: 2px; }
+    .contact-form { background: var(--bg-2); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+    .contact-form h3 { font-size: 1.05rem; font-weight: 800; color: var(--dark); margin-bottom: 24px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.73rem; font-weight: 600; color: var(--gray); margin-bottom: 5px; letter-spacing: 0.04em; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; font-family: var(--font); font-size: 0.88rem; color: var(--dark); background: white; border: 1px solid var(--border); border-radius: 8px; padding: 11px 14px; outline: none; transition: border-color 0.15s; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(29,78,216,0.1); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-submit-btn { width: 100%; justify-content: center; font-size: 0.95rem; padding: 14px; }
+    .form-footnote { font-size: 0.72rem; color: var(--gray-dim); text-align: center; margin-top: 10px; }
+
+    /* FINAL CTA */
+    .cta-section { padding: 80px 0; background: var(--dark); }
+    .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .cta-inner h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 900; letter-spacing: -0.025em; color: white; line-height: 1.1; }
+    .cta-inner p { font-size: 0.9rem; color: rgba(255,255,255,0.5); margin-top: 8px; max-width: 480px; line-height: 1.65; }
+    .cta-btns { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+
+    /* FOOTER */
+    footer { background: #0B1120; border-top: 1px solid rgba(255,255,255,0.06); padding: 64px 0 0; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 64px; }
+    .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: 800; color: white; margin-bottom: 12px; }
+    .footer-logo .logo-icon { width: 22px; height: 22px; border: 1.5px solid #60A5FA; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 900; color: #60A5FA; }
+    .footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.3); line-height: 1.65; max-width: 220px; }
+    .footer-col h4 { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.22); margin-bottom: 14px; }
+    .footer-col a { display: block; font-size: 0.82rem; color: rgba(255,255,255,0.4); padding: 4px 0; transition: color 0.15s; }
+    .footer-col a:hover { color: white; }
+    .footer-wordmark { border-top: 1px solid rgba(255,255,255,0.05); padding: 28px 0 0; overflow: hidden; }
+    .footer-wordmark-text { font-size: clamp(4rem, 12vw, 10rem); font-weight: 900; letter-spacing: -0.04em; color: rgba(255,255,255,0.05); line-height: 0.85; user-select: none; white-space: nowrap; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.2); }
 
     /* ANALYTICS DASHBOARD PREVIEW */
     .cpd { background: #EBEBF0; padding: 10px 12px 8px; height: 224px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
     .cpd-top { display: flex; justify-content: space-between; align-items: center; }
-    .cpd-title { font-size: 0.65rem; font-weight: 800; color: #111; display: flex; align-items: center; gap: 4px; letter-spacing: -0.01em; }
+    .cpd-title { font-size: 0.65rem; font-weight: 800; color: #111; display: flex; align-items: center; gap: 4px; }
     .cpd-refresh { font-size: 0.55rem; color: #888; }
     .cpd-pills { display: flex; gap: 5px; flex-wrap: wrap; }
-    .cpd-pill { font-size: 0.55rem; background: white; border: 1px solid #D8D8DE; border-radius: 5px; padding: 2px 7px; color: #444; font-weight: 500; display: flex; align-items: center; gap: 3px; }
+    .cpd-pill { font-size: 0.55rem; background: white; border: 1px solid #D8D8DE; border-radius: 5px; padding: 2px 7px; color: #444; font-weight: 500; }
     .cpd-stats-row { display: grid; grid-template-columns: 1.1fr 0.95fr 0.95fr; gap: 5px; }
-    .cpd-stat { background: white; border: 1px solid #E0E0E6; border-radius: 8px; padding: 6px 8px; position: relative; overflow: hidden; }
+    .cpd-stat { background: white; border: 1px solid #E0E0E6; border-radius: 8px; padding: 6px 8px; }
     .cpd-stat-lbl { font-size: 0.54rem; color: #555; font-weight: 600; margin-bottom: 3px; white-space: nowrap; }
     .cpd-stat-val { font-size: 0.72rem; font-weight: 800; color: #111; white-space: nowrap; }
     .cpd-up { color: #16a34a; font-size: 0.58rem; font-weight: 700; }
@@ -472,6 +351,47 @@
     .cpd-legend-item { display: flex; align-items: center; gap: 3px; font-size: 0.5rem; color: #888; }
     .cpd-legend-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
     .cpd-legend-dash { width: 12px; height: 1.5px; border-top: 1.5px dashed #93C5FD; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-cards { grid-template-columns: 1fr 1fr; }
+      .expertise-layout { grid-template-columns: 1fr; gap: 32px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 860px) {
+      .announce-bar { display: none; }
+      .nav-links, .nav-cta-desk { display: none; }
+      .nav-burger { display: flex; }
+      .hero { padding: 48px 0 64px; }
+      .hero-cards { grid-template-columns: 1fr; }
+      .hero-card-right { min-height: 260px; }
+      .hero-stats { flex-direction: column; border-radius: 10px; }
+      .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-stat:last-child { border-bottom: none; }
+      .cases-grid { grid-template-columns: 1fr 1fr; }
+      .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+      .work-row { grid-template-columns: 48px 1fr auto; }
+      .work-row-result { display: none; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
+      .cta-inner { flex-direction: column; align-items: flex-start; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .money-grid { grid-template-columns: 1fr; }
+      .money-stats-row { grid-template-columns: 1fr; }
+      .msr-item:not(:last-child) { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    }
+    @media (max-width: 560px) {
+      .container { padding: 0 20px; }
+      .hero-title { font-size: 2rem; }
+      .cases-grid { grid-template-columns: 1fr; }
+      .capabilities-grid { grid-template-columns: 1fr 1fr; }
+      .work-row { grid-template-columns: 40px 1fr; }
+      .work-row-tag { display: none; }
+      .footer-top { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-wordmark-text { font-size: 3.5rem; }
+      .testimonial-quote { font-size: 1.35rem; }
+    }
   </style>
 </head>
 <body>
@@ -480,12 +400,12 @@
 <div class="announce-bar">
   <div class="announce-bar-center">
     <span class="announce-new">NEW</span>
-    <span>We deliver your site in 10 days or give you $200 off.</span>
+    <span>We deliver your site in 10 days or give you $200 off. Guaranteed.</span>
     <a href="#contact">Talk to an expert ↗</a>
   </div>
   <div class="announce-right">
     <span class="announce-dot"></span>
-    <span>Got a tight deadline?</span>
+    <span>Tight deadline? We've got you.</span>
   </div>
 </div>
 
@@ -499,12 +419,12 @@
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#work">Our Work</a></li>
+        <li><a href="#results">Results</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <a href="#contact" class="btn btn-blue nav-cta-desk">Talk to an expert</a>
+        <a href="#contact" class="btn btn-blue nav-cta-desk">Get a free quote</a>
         <div class="nav-burger" id="burger" onclick="toggleMenu()">
           <span></span><span></span><span></span>
         </div>
@@ -513,14 +433,13 @@
   </div>
 </nav>
 
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#services" onclick="closeMenu()">Services</a>
-  <a href="#work" onclick="closeMenu()">Our Work</a>
+  <a href="#results" onclick="closeMenu()">Results</a>
   <a href="#pricing" onclick="closeMenu()">Pricing</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
   <div class="mobile-menu-footer">
-    <a href="#contact" onclick="closeMenu()" class="btn btn-orange btn-lg" style="width:100%;justify-content:center;">Talk to an expert</a>
+    <a href="#contact" onclick="closeMenu()" class="btn btn-orange btn-lg" style="width:100%;justify-content:center;">Get a free quote</a>
   </div>
 </div>
 
@@ -531,28 +450,27 @@
     <div class="hero-blob hero-blob-2"></div>
     <div class="hero-blob hero-blob-3"></div>
     <div class="hero-grid-bg"></div>
-    <div class="hero-noise"></div>
   </div>
   <div class="container">
-    <p class="hero-eyebrow">Professional Web Design for Local Businesses</p>
-    <h1 class="hero-title" data-reveal="up">
-      Websites built to work for you.<br>
-      <span class="blue">Get found. Get customers. Grow.</span>
+    <p class="hero-eyebrow">Web Design for Local Businesses</p>
+    <h1 class="hero-title">
+      Stop losing customers<br>to businesses with better websites.<br>
+      <span class="blue">We fix that in 10 days.</span>
     </h1>
 
-    <div class="hero-cards" data-reveal="up" data-delay="1">
+    <div class="hero-cards">
       <div class="hero-card-left">
-        <p class="hero-card-left-sub">Sites that generate real results</p>
-        <h2>Your business deserves a website that works for you, 24 hours a day.</h2>
-        <p>Mobile-first design, local SEO, and contact forms built to convert. Your customers are already searching for you — make sure they find you first.</p>
+        <p class="hero-card-left-sub">Built to generate real leads</p>
+        <h2>Your website should be working for you around the clock — even when you're not.</h2>
+        <p>Fast-loading, mobile-first, SEO-optimized, and built to convert. We design websites that get local businesses found on Google and turn visitors into paying customers.</p>
         <a href="https://wa.me/15407838835" target="_blank" rel="noopener" class="btn btn-ghost-white">Talk to an expert</a>
       </div>
       <div class="hero-card-right">
-        <img src="founder-photo.jpg" alt="Kalnyesgrowth — Founder">
+        <img src="founder-photo.jpg" alt="Kalnyesgrowth Founder" onerror="this.parentElement.style.background='linear-gradient(140deg,#1e3a8a,#2563EB)'">
       </div>
     </div>
 
-    <div class="hero-stats" data-reveal="up" data-delay="2">
+    <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">52<span>+</span></div>
         <div class="hero-stat-label">Local businesses served</div>
@@ -563,7 +481,7 @@
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num">10<span>d</span></div>
-        <div class="hero-stat-label">Average delivery time</div>
+        <div class="hero-stat-label">Guaranteed delivery</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num">$0<span>/mo</span></div>
@@ -573,20 +491,20 @@
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee-section">
-  <p class="marquee-label">Industries we serve</p>
-  <div class="marquee-track">
-    <span class="marquee-item">Plumbing</span>
-    <span class="marquee-item">Electricians</span>
-    <span class="marquee-item">Roofing</span>
-    <span class="marquee-item">Beauty Salons</span>
-    <span class="marquee-item">Event Rentals</span>
-    <span class="marquee-item">Restaurants</span>
-    <span class="marquee-item">Lawyers</span>
-    <span class="marquee-item">Dentists</span>
-    <span class="marquee-item">HVAC</span>
-    <span class="marquee-item">Auto Repair</span>
+<!-- INDUSTRIES STRIP -->
+<div class="industries-strip">
+  <p class="industries-label">Industries we serve</p>
+  <div class="industries-track">
+    <span class="industries-item">Plumbing</span>
+    <span class="industries-item">Electricians</span>
+    <span class="industries-item">Roofing</span>
+    <span class="industries-item">Beauty Salons</span>
+    <span class="industries-item">Event Rentals</span>
+    <span class="industries-item">Restaurants</span>
+    <span class="industries-item">Law Firms</span>
+    <span class="industries-item">Dentists</span>
+    <span class="industries-item">HVAC</span>
+    <span class="industries-item">Auto Repair</span>
   </div>
 </div>
 
@@ -594,11 +512,10 @@
 <section class="money-section">
   <div class="container">
     <div class="money-header" data-reveal="up">
-      <span class="eyebrow">The Cost of Being Invisible Online</span>
-      <h2>Thousands of dollars lost every month.<br>For not having a website or booking system.</h2>
-      <p>Most local businesses have no idea how much they're losing. Here are the real numbers.</p>
+      <span class="money-eyebrow">The Real Cost of No Website</span>
+      <h2>Thousands of dollars in lost revenue.<br>Every single month.</h2>
+      <p>Most business owners don't realize how much they're losing to competitors who simply show up on Google. Here are the numbers.</p>
     </div>
-
     <div class="money-grid">
       <div class="money-card" data-reveal="up" data-delay="1">
         <div class="donut-wrap">
@@ -614,26 +531,19 @@
         <div class="money-card-content">
           <div class="money-accent" style="color:#ef4444">36%</div>
           <div class="money-card-title">Of local businesses have no website</div>
-          <p class="money-card-desc">They're invisible to 97% of potential customers. Every time someone searches on Google, that business doesn't exist. Customers go straight to the competitor who shows up.</p>
-          <div class="money-loss-tag">💸 Up to $70,000 lost per year in customers who never find them</div>
+          <p class="money-card-desc">They're invisible to 97% of potential customers. Every time someone searches on Google, that business doesn't exist. Those customers go straight to a competitor who does show up.</p>
+          <div class="money-loss-tag">💸 Up to $70,000 lost per year from customers who never find them</div>
         </div>
       </div>
-
       <div class="money-card" data-reveal="up" data-delay="2">
         <div class="bar-chart">
           <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);margin-bottom:4px;">Average monthly revenue</div>
           <div class="bar-group">
-            <div class="bar-label-row">
-              <span class="bar-label-text">Without online booking</span>
-              <span class="bar-label-val">$3,200/mo</span>
-            </div>
+            <div class="bar-label-row"><span class="bar-label-text">Without online booking</span><span class="bar-label-val">$3,200/mo</span></div>
             <div class="bar-track"><div class="bar-fill bar-fill-bad"></div></div>
           </div>
           <div class="bar-group">
-            <div class="bar-label-row">
-              <span class="bar-label-text">With online booking</span>
-              <span class="bar-label-val green">$5,100/mo</span>
-            </div>
+            <div class="bar-label-row"><span class="bar-label-text">With online booking</span><span class="bar-label-val green">$5,100/mo</span></div>
             <div class="bar-track"><div class="bar-fill bar-fill-good"></div></div>
           </div>
           <div style="font-size:0.75rem;color:#4ade80;font-weight:700;margin-top:4px;">↗ 59% more revenue with automatic bookings</div>
@@ -641,41 +551,30 @@
         <div class="money-card-content">
           <div class="money-accent" style="color:#f59e0b">74%</div>
           <div class="money-card-title">Of websites have no booking system</div>
-          <p class="money-card-desc">Every customer who can't book or get a quote instantly has a 60% chance of going to a competitor. A booking system works for you 24 hours a day, without you lifting a finger.</p>
+          <p class="money-card-desc">Every customer who can't instantly book or request a quote has a 60% chance of leaving for a competitor. An automated booking system works for you 24 hours a day without any effort from you.</p>
           <div class="money-gain-tag">📈 Businesses with online booking generate 59% more revenue on average</div>
         </div>
       </div>
     </div>
-
     <div class="money-stats-row" data-reveal="up">
-      <div class="msr-item">
-        <div class="msr-num">97%</div>
-        <p class="msr-label">of consumers search Google before visiting a local business</p>
-      </div>
-      <div class="msr-item">
-        <div class="msr-num">70%</div>
-        <p class="msr-label">of people prefer to book or get a quote online rather than call</p>
-      </div>
-      <div class="msr-item">
-        <div class="msr-num">3x</div>
-        <p class="msr-label">more leads convert for businesses with a professional website vs. those without</p>
-      </div>
+      <div class="msr-item"><div class="msr-num">97%</div><p class="msr-label">of consumers search Google before visiting a local business</p></div>
+      <div class="msr-item"><div class="msr-num">70%</div><p class="msr-label">of people prefer to book or get a quote online rather than call</p></div>
+      <div class="msr-item"><div class="msr-num">3x</div><p class="msr-label">more leads for businesses with a professional website vs. none</p></div>
     </div>
   </div>
 </section>
 
 <!-- CASE STUDIES -->
-<section class="cases-section" id="portfolio">
+<section class="cases-section" id="results">
   <div class="container">
-    <div class="cases-header">
+    <div class="cases-header" data-reveal="up">
       <span class="eyebrow">Real Results</span>
-      <h2 data-reveal="up">From invisible to revenue machines.<br>Real sales in the first 30 days.</h2>
+      <h2 class="section-title">From invisible to booked solid.<br>Real revenue in the first 30 days.</h2>
     </div>
-
     <div class="cases-grid">
 
       <div class="case-card" data-reveal="scale" data-delay="1">
-        <div class="cpd">
+        <div class="cpd case-blue">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -684,12 +583,10 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Jobs</div><div class="cpd-stat-val">21 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$8,400 <span class="up">↗ 312%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
               <path d="M0,46 C15,46 25,34 30,10 C35,0 40,5 45,28 C50,44 55,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,46 C40,46 75,44 85,6 C90,0 95,8 100,42 C110,46 150,46 200,46 C210,44 215,26 220,8 C225,0 228,8 235,42 C240,46 265,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="220" cy="8" r="3" fill="#2563EB"/>
@@ -697,15 +594,11 @@
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Plumbing</div>
-          <div class="case-name">Johnson Plumbing Services</div>
-          <div class="case-result">↗ $8,400 in new sales in the first 30 days. Houston, TX.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Plumbing</div><div class="case-name">Johnson Plumbing Services</div><div class="case-result">↗ $8,400 in new sales in the first 30 days. Houston, TX.</div></div>
       </div>
 
       <div class="case-card" data-reveal="scale" data-delay="2">
-        <div class="cpd">
+        <div class="cpd case-green">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -714,12 +607,10 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Appts</div><div class="cpd-stat-val">104 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$6,200 <span class="up">↗ 187%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
               <path d="M0,46 C20,46 40,42 50,28 C55,18 57,34 62,44 C68,46 100,46 140,46 C150,44 155,34 160,26 C163,20 165,34 168,44 C175,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,44 C15,42 25,28 32,10 C37,2 40,12 45,42 C55,46 80,46 100,46 C110,44 120,22 125,8 C130,0 133,10 138,42 C145,46 180,46 200,46 C210,44 218,26 223,10 C227,2 230,12 235,42 C240,46 260,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="125" cy="0" r="3" fill="#2563EB"/>
@@ -727,15 +618,11 @@
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Beauty Salon</div>
-          <div class="case-name">Luxe Beauty Studio</div>
-          <div class="case-result">↗ $6,200 in sales · 58 new clients in 30 days. Dallas, TX.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Beauty Salon</div><div class="case-name">Luxe Beauty Studio</div><div class="case-result">↗ $6,200 in sales · 58 new clients in 30 days. Dallas, TX.</div></div>
       </div>
 
       <div class="case-card" data-reveal="scale" data-delay="3">
-        <div class="cpd">
+        <div class="cpd case-orange">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -744,12 +631,10 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Projects</div><div class="cpd-stat-val">9 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$24,500 <span class="up">↗ 428%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
               <path d="M0,46 C50,46 100,46 130,46 C138,44 142,34 145,20 C148,8 150,16 155,42 C160,46 180,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,46 C30,46 70,46 100,46 C115,44 125,28 132,6 C137,0 140,6 145,36 C150,46 165,46 200,46 C208,44 215,28 220,4 C224,0 227,4 232,36 C237,46 260,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="220" cy="4" r="3" fill="#2563EB"/>
@@ -757,15 +642,11 @@
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Roofing</div>
-          <div class="case-name">ProShield Roofing</div>
-          <div class="case-result">↗ $24,500 in sales · 9 projects closed in 30 days. Miami, FL.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Roofing</div><div class="case-name">ProShield Roofing</div><div class="case-result">↗ $24,500 in sales · 9 projects closed in 30 days. Miami, FL.</div></div>
       </div>
 
       <div class="case-card" data-reveal="scale" data-delay="4">
-        <div class="cpd">
+        <div class="cpd case-purple">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -774,12 +655,10 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Bookings</div><div class="cpd-stat-val">31 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$12,800 <span class="up">↗ 265%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
               <path d="M0,46 C60,46 100,46 130,46 C145,44 155,34 160,24 C163,16 165,28 170,44 C175,46 200,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,46 C20,45 40,44 60,43 C80,42 100,44 120,42 C130,40 140,30 150,18 C155,10 158,2 163,0 C168,2 173,16 180,42 C185,46 200,46 240,46 C255,44 265,24 270,8 C273,0 275,4 278,42 C279,46 280,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="163" cy="0" r="3" fill="#2563EB"/>
@@ -787,15 +666,11 @@
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Event Rentals</div>
-          <div class="case-name">Premier Party Rentals</div>
-          <div class="case-result">↗ $12,800 in sales · 31 online bookings in 30 days. Chicago, IL.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Event Rentals</div><div class="case-name">Premier Party Rentals</div><div class="case-result">↗ $12,800 in sales · 31 online bookings in 30 days. Chicago, IL.</div></div>
       </div>
 
       <div class="case-card" data-reveal="scale" data-delay="5">
-        <div class="cpd">
+        <div class="cpd case-teal">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -804,28 +679,22 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Jobs</div><div class="cpd-stat-val">38 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$9,100 <span class="up">↗ 203%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
-              <path d="M0,46 C20,46 35,42 40,28 C44,16 46,30 50,44 C55,46 90,46 115,46 C125,44 130,36 133,24 C136,14 138,28 142,44 C147,46 180,46 230,46 C238,44 242,36 245,28 C248,20 250,33 254,44 C258,46 270,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <path d="M0,46 C20,46 35,42 40,28 C44,16 46,30 50,44 C55,46 90,46 230,46 C238,44 242,36 245,28 C248,20 250,33 254,44 C258,46 270,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,44 C10,42 20,28 25,12 C29,2 31,10 36,42 C40,46 60,46 90,46 C100,44 108,30 113,14 C117,4 120,12 125,42 C130,46 150,46 175,46 C182,44 190,30 195,14 C199,4 202,12 207,42 C212,46 240,46 258,46 C265,44 270,28 273,12 C276,2 277,10 279,42 C280,46 280,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="25" cy="2" r="3" fill="#2563EB"/>
             </svg>
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Electrician</div>
-          <div class="case-name">Apex Electric Co.</div>
-          <div class="case-result">↗ $9,100 in sales · 38 jobs closed in 30 days. Phoenix, AZ.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Electrical</div><div class="case-name">Apex Electric Co.</div><div class="case-result">↗ $9,100 in sales · 38 jobs closed in 30 days. Phoenix, AZ.</div></div>
       </div>
 
       <div class="case-card" data-reveal="scale" data-delay="6">
-        <div class="cpd">
+        <div class="cpd case-red">
           <div class="cpd-top"><span class="cpd-title">📊 Analytics</span><span class="cpd-refresh">Last updated: today</span></div>
           <div class="cpd-pills"><span class="cpd-pill">📅 Mar–Apr 2026 ▾</span><span class="cpd-pill">📅 Feb 2026 ▾</span><span class="cpd-pill">USD $</span></div>
           <div class="cpd-stats-row">
@@ -834,12 +703,10 @@
             <div class="cpd-stat"><div class="cpd-stat-lbl">Appts</div><div class="cpd-stat-val">87 <span class="cpd-flat">—</span></div></div>
           </div>
           <div class="cpd-chart-card">
-            <div class="cpd-chart-title">Total sales in 30 days</div>
+            <div class="cpd-chart-title">Total sales — 30 days</div>
             <div class="cpd-chart-amount">$18,300 <span class="up">↗ 156%</span></div>
             <svg class="cpd-svg" viewBox="0 0 280 46" preserveAspectRatio="none">
-              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/>
-              <line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
+              <line x1="0" y1="12" x2="280" y2="12" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="24" x2="280" y2="24" stroke="#F0F0F2" stroke-width="1"/><line x1="0" y1="36" x2="280" y2="36" stroke="#F0F0F2" stroke-width="1"/>
               <path d="M0,46 C30,46 55,43 70,36 C80,28 82,40 90,45 C100,46 150,46 190,46 C200,44 205,38 210,30 C215,22 217,34 222,44 C226,46 250,46 280,46" stroke="#93C5FD" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.75"/>
               <path d="M0,44 C20,42 40,34 55,18 C62,8 65,16 72,42 C78,46 100,46 130,46 C140,44 150,32 158,14 C163,4 165,0 170,0 C175,2 180,16 188,44 C194,46 220,46 245,46 C255,44 263,32 268,16 C272,6 274,12 278,42 C279,46 280,46 280,46" stroke="#2563EB" stroke-width="2" fill="none"/>
               <circle cx="170" cy="0" r="3" fill="#2563EB"/>
@@ -847,122 +714,96 @@
             <div class="cpd-legend"><span class="cpd-legend-item"><span class="cpd-legend-dot" style="background:#2563EB"></span>Mar–Apr 2026</span><span class="cpd-legend-item"><span class="cpd-legend-dash"></span>Feb 2026</span></div>
           </div>
         </div>
-        <div class="case-body">
-          <div class="case-niche">Dental</div>
-          <div class="case-name">Bright Smile Dental</div>
-          <div class="case-result">↗ $18,300 in sales · 40 new patients in 30 days. Los Angeles, CA.</div>
-        </div>
+        <div class="case-body"><div class="case-niche">Dental</div><div class="case-name">Bright Smile Dental</div><div class="case-result">↗ $18,300 in sales · 40 new patients in 30 days. Los Angeles, CA.</div></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- EXPERTISE / CAPABILITIES -->
+<!-- SERVICES -->
 <section class="expertise-section" id="services">
   <div class="container">
     <div class="expertise-layout">
       <div>
-        <span class="eyebrow">Our Services</span>
-        <h2 data-reveal="left">Websites aren't part of what we do. Websites are everything we do.</h2>
+        <span class="eyebrow">What We Build</span>
+        <h2 data-reveal="left">Websites are not part of what we do. Websites are all we do.</h2>
       </div>
       <div>
-        <p data-reveal="right">We help local business owners turn outdated, underperforming sites into high-converting digital machines that capture leads, drive calls, and accelerate growth. No technical knowledge needed on your end.</p>
+        <p data-reveal="right">We help local business owners replace outdated, invisible websites with fast, conversion-focused sites that capture leads around the clock. You run your business. We make sure customers can find it.</p>
       </div>
     </div>
-
     <div class="capabilities-grid">
       <div class="cap-tile" data-reveal="scale" data-delay="1">
         <div class="cap-tile-bg"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h10M7 11h6"/></svg>
-        </div>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h10M7 11h6"/></svg></div>
         <span class="cap-tile-label">Web Design<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Professional &amp; modern</span></span>
       </div>
       <div class="cap-tile" data-reveal="scale" data-delay="2">
         <div class="cap-tile-bg cap-tile-bg-2"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        </div>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
         <span class="cap-tile-label">Local SEO<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Rank first on Google</span></span>
       </div>
       <div class="cap-tile" data-reveal="scale" data-delay="3">
         <div class="cap-tile-bg cap-tile-bg-3"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
-        </div>
-        <span class="cap-tile-label">Online Booking<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">24/7 bookings, no calls needed</span></span>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></div>
+        <span class="cap-tile-label">Online Booking<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Book while you sleep</span></span>
       </div>
       <div class="cap-tile" data-reveal="scale" data-delay="4">
         <div class="cap-tile-bg cap-tile-bg-4"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.86-1.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </div>
-        <span class="cap-tile-label">Click-to-Call<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Instant contact, more leads</span></span>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.86-1.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <span class="cap-tile-label">Click-to-Call<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">One tap, instant lead</span></span>
       </div>
       <div class="cap-tile" data-reveal="scale" data-delay="5">
         <div class="cap-tile-bg cap-tile-bg-5"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v3l2 2"/></svg>
-        </div>
-        <span class="cap-tile-label">Google Business<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Optimized &amp; verified profile</span></span>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v3l2 2"/></svg></div>
+        <span class="cap-tile-label">Google Business<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Verified &amp; optimized</span></span>
       </div>
       <div class="cap-tile" data-reveal="scale" data-delay="6">
         <div class="cap-tile-bg cap-tile-bg-6"></div>
-        <div class="cap-tile-icon">
-          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/><path d="M9 6h6"/></svg>
-        </div>
-        <span class="cap-tile-label">Mobile-First<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Perfect on every screen</span></span>
+        <div class="cap-tile-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/><path d="M9 6h6"/></svg></div>
+        <span class="cap-tile-label">Mobile-First<br><span style="font-weight:400;opacity:0.65;font-size:0.75rem;">Perfect on any screen</span></span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WORK LIST / PROCESS -->
-<section class="work-section" id="work">
+<!-- PROCESS -->
+<section class="work-section">
   <div class="container">
-    <div class="work-header">
+    <div class="work-header" data-reveal="up">
       <span class="eyebrow">Our Process</span>
-      <h2 data-reveal="up">From call to launch, in 3 simple steps.</h2>
-      <p data-reveal="up" data-delay="1">No technical knowledge needed. You run your business. We handle everything else.</p>
+      <h2>From first call to live website, in 3 steps.</h2>
+      <p>No technical knowledge required. You approve everything before it goes live. We handle the rest.</p>
     </div>
     <div class="work-list">
       <div class="work-row" data-reveal="up">
         <div class="work-icon">📞</div>
-        <div>
-          <div class="work-row-name">Free 20-minute call</div>
-          <div class="work-row-city">No commitment, no pressure.</div>
-        </div>
-        <div class="work-row-result">We learn about your business, your city, and your customers. We'll show you exactly what your site will look like — before you pay anything.</div>
+        <div><div class="work-row-name">Free 20-minute strategy call</div><div class="work-row-city">No commitment. No hard sell.</div></div>
+        <div class="work-row-result">We learn about your business, your city, and your customers. We'll show you exactly what your site will look like before you spend a dollar.</div>
         <div class="work-row-tag">Step 01</div>
       </div>
       <div class="work-row" data-reveal="up" data-delay="1">
         <div class="work-icon">🎨</div>
-        <div>
-          <div class="work-row-name">We build your site in 10 days</div>
-          <div class="work-row-city">Mobile-first · Click-to-call · Local SEO</div>
-        </div>
-        <div class="work-row-result">We design and build your complete site. You review and approve it before it ever goes live.</div>
+        <div><div class="work-row-name">We build your site in 10 days</div><div class="work-row-city">Mobile-first · Click-to-call · Local SEO</div></div>
+        <div class="work-row-result">We design and build your complete website. You review it and request any changes before it ever goes live. Your approval required before launch.</div>
         <div class="work-row-tag">Step 02</div>
       </div>
       <div class="work-row" data-reveal="up" data-delay="2">
         <div class="work-icon">📈</div>
-        <div>
-          <div class="work-row-name">Customers find you on Google</div>
-          <div class="work-row-city">Local SEO + Google Business Profile optimized</div>
-        </div>
-        <div class="work-row-result">Customers in your area find you and reach out directly. Most clients see new leads within the first 30 days.</div>
+        <div><div class="work-row-name">Customers find you on Google</div><div class="work-row-city">Local SEO + Google Business Profile set up</div></div>
+        <div class="work-row-result">Customers in your area start finding you and reaching out. Most clients see their first new leads within the first 30 days after launch.</div>
         <div class="work-row-tag">Step 03</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIAL — dark section -->
+<!-- TESTIMONIAL -->
 <section class="testimonial-section">
   <div class="container">
     <p class="testimonial-quote" data-reveal="up" id="test-quote">
-      Before Kalnyesgrowth we were completely invisible online. Within 3 weeks of launch we had 12 new customers reach out through the site alone. We made back the investment in the first month.
+      Before Kalnyesgrowth we were completely invisible online. Within 3 weeks of launch we had 12 new customers reach out through the site alone. We made back the investment in the first month — and we're still getting leads every week.
     </p>
     <div class="testimonial-meta" data-reveal="up" data-delay="1">
       <img id="test-img" src="https://i.pravatar.cc/80?img=15" alt="Mike Johnson" class="test-avatar">
@@ -983,20 +824,20 @@
 <!-- PRICING -->
 <section class="pricing-section" id="pricing">
   <div class="container">
-    <div class="pricing-header">
+    <div class="pricing-header" data-reveal="up">
       <span class="eyebrow">Pricing</span>
-      <h2 data-reveal="up">One new customer pays<br>for the entire website.</h2>
-      <p data-reveal="up" data-delay="1">One-time payment. Your site is 100% yours forever. No contracts. No monthly fees.</p>
+      <h2>One new customer pays for<br>the entire website.</h2>
+      <p>One-time payment. Your website is 100% yours forever. No contracts. No monthly fees. No surprises.</p>
     </div>
-
     <div class="pricing-grid">
+
       <div class="price-card" data-reveal="up" data-delay="1">
         <div class="pc-price-tag">Get started this week</div>
         <div class="pc-tier">Entry Level</div>
         <div class="pc-name">Starter Pro</div>
-        <div class="pc-desc">For businesses with no website that need to exist on Google before a competitor steals more customers.</div>
+        <div class="pc-desc">For businesses with no website that need to get on Google before a competitor takes more of their customers.</div>
         <div class="pc-price">$450</div>
-        <div class="pc-price-sub">One-time · Delivered in 7 days</div>
+        <div class="pc-price-sub">One-time payment · Delivered in 7 days</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li><span class="pc-check"></span><span>4–5 professional pages</span></li>
@@ -1008,7 +849,7 @@
           <li><span class="pc-check"></span><span>30-day support included</span></li>
           <li><span class="pc-check"></span><span>30-day satisfaction guarantee</span></li>
         </ul>
-        <a href="#contact" class="btn btn-ghost pc-btn">Book a call →</a>
+        <a href="#contact" class="btn btn-ghost pc-btn">Book a free call →</a>
       </div>
 
       <div class="price-card featured" data-reveal="up" data-delay="2">
@@ -1016,55 +857,54 @@
         <div class="pc-price-tag">Most chosen</div>
         <div class="pc-tier">Core</div>
         <div class="pc-name">Client Machine</div>
-        <div class="pc-desc">Built to convert visitors into paying customers. The package of choice for businesses that want real, measurable results.</div>
+        <div class="pc-desc">Built to turn visitors into paying customers. The package business owners choose when they're serious about growth.</div>
         <div class="pc-price">$850</div>
-        <div class="pc-price-sub">One-time · Delivered in 10 days</div>
+        <div class="pc-price-sub">One-time payment · Delivered in 10 days</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li><span class="pc-check"></span><span>Everything in Starter Pro</span></li>
           <li><span class="pc-check"></span><span>6–8 custom pages</span></li>
-          <li><span class="pc-check"></span><span>Appointment &amp; quote form</span></li>
+          <li><span class="pc-check"></span><span>Appointment &amp; quote request form</span></li>
           <li><span class="pc-check"></span><span>Photo &amp; project gallery</span></li>
-          <li><span class="pc-check"></span><span>Google Reviews integrated</span></li>
+          <li><span class="pc-check"></span><span>Google Reviews integration</span></li>
           <li><span class="pc-check"></span><span>Advanced local SEO</span></li>
-          <li><span class="pc-check"></span><span>WhatsApp integration</span></li>
+          <li><span class="pc-check"></span><span>WhatsApp / contact widget</span></li>
           <li><span class="pc-check"></span><span>60-day priority support</span></li>
         </ul>
-        <a href="#contact" class="btn btn-orange pc-btn">Book a call →</a>
+        <a href="#contact" class="btn btn-orange pc-btn">Book a free call →</a>
       </div>
 
       <div class="price-card" data-reveal="up" data-delay="3">
         <div class="pc-price-tag">Dominate your market</div>
         <div class="pc-tier">Premium</div>
         <div class="pc-name">Full System</div>
-        <div class="pc-desc">For serious businesses that want automatic bookings, dominant SEO, and a system that works for you 7 days a week.</div>
+        <div class="pc-desc">For businesses that want automated bookings, top Google rankings, and a system that generates leads every day without any effort.</div>
         <div class="pc-price">$2,000</div>
-        <div class="pc-price-sub">One-time · Delivered in 14 days</div>
+        <div class="pc-price-sub">One-time payment · Delivered in 14 days</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li><span class="pc-check"></span><span>Everything in Client Machine</span></li>
-          <li><span class="pc-check"></span><span>Automatic online bookings</span></li>
-          <li><span class="pc-check"></span><span>Automated follow-up system</span></li>
+          <li><span class="pc-check"></span><span>Automatic online booking system</span></li>
+          <li><span class="pc-check"></span><span>Automated follow-up messages</span></li>
           <li><span class="pc-check"></span><span>Multi-city SEO targeting</span></li>
           <li><span class="pc-check"></span><span>Blog / content section</span></li>
-          <li><span class="pc-check"></span><span>Lead capture &amp; email list</span></li>
-          <li><span class="pc-check"></span><span>Monthly results report</span></li>
+          <li><span class="pc-check"></span><span>Email lead capture</span></li>
+          <li><span class="pc-check"></span><span>Monthly performance report</span></li>
           <li><span class="pc-check"></span><span>90-day priority support</span></li>
         </ul>
-        <a href="#contact" class="btn btn-ghost pc-btn">Book a call →</a>
+        <a href="#contact" class="btn btn-ghost pc-btn">Book a free call →</a>
       </div>
     </div>
 
     <div class="hosting-note" data-reveal="up">
       <span style="font-size:1.4rem;flex-shrink:0;">🔁</span>
-      <p><strong>Monthly hosting: $50/month</strong> · After launch, $50/month keeps your site live, fast, and secure. Less than $2 a day. One new customer from the site pays for the whole year.</p>
+      <p><strong>Monthly hosting: $50/month</strong> · After launch, $50/month keeps your site live, fast, and secure. Less than $2 a day. One new customer from your site pays for an entire year of hosting.</p>
     </div>
-
     <div class="guarantee-strip" data-reveal="up">
       <span class="g-icon">🛡️</span>
       <div>
         <div class="g-title">30-day satisfaction guarantee</div>
-        <div class="g-sub">If you're not 100% satisfied with your site before it goes live, we refund you in full. No questions, no hassle.</div>
+        <div class="g-sub">If you're not 100% satisfied with your website before it goes live, we refund you in full. No questions asked.</div>
       </div>
     </div>
   </div>
@@ -1073,52 +913,34 @@
 <!-- FAQ -->
 <section class="faq-section" id="faq">
   <div class="container">
-    <div class="faq-header">
-      <span class="eyebrow">Frequently Asked Questions</span>
-      <h2 data-reveal="up">Questions about Kalnyesgrowth</h2>
+    <div class="faq-header" data-reveal="up">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item" data-reveal="up">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>Do I need to pay monthly fees after my website is built?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">No. You pay once and the website is yours forever. The only recurring cost is hosting ($50/month), which covers keeping your site live, fast, and maintained. No annual contracts, no surprises.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>Do I need to pay monthly fees after the website is built?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">No. You pay once and the website is yours forever. The only ongoing cost is hosting at $50/month, which keeps your site live, fast, and maintained. No annual contracts, no hidden fees.</div>
       </div>
       <div class="faq-item" data-reveal="up" data-delay="1">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>How long does it take to build my website?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">Our standard delivery is 10 business days. Premium packages are delivered in 14 days. We guarantee these timelines: if we miss them, you get $200 off your total.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>How long does it take to build my website?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Standard delivery is 10 business days. Premium packages are delivered in 14 days. We back this with a guarantee: if we miss the deadline, you get $200 off your total.</div>
       </div>
       <div class="faq-item" data-reveal="up" data-delay="2">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>What if I don't have photos or written content?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">We handle the copywriting for your site. For photos, we use professional stock images while you gather real ones from your business. We update with your actual photos at no extra cost, anytime.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>What if I don't have photos or written content?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">We write all the copy for your site. For photos, we use professional stock images while you gather real ones from your business. We swap them out for free whenever you're ready.</div>
       </div>
       <div class="faq-item" data-reveal="up" data-delay="3">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>Will my website show up on Google?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">Yes. Every site includes local SEO: title tags, meta descriptions, city-level keyword targeting, and Google Business Profile optimization. Most clients see their first Google traffic within 2 to 4 weeks of launch.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>Will my website actually show up on Google?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Yes. Every site includes local SEO: title tags, meta descriptions, city-level keywords, and full Google Business Profile setup. Most clients see their first Google traffic within 2 to 4 weeks of launch.</div>
       </div>
       <div class="faq-item" data-reveal="up" data-delay="4">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>What industries do you work with?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">We specialize in local service businesses: plumbers, electricians, roofers, HVAC, painters, landscapers, salons, barbershops, auto repair, dentists, event rental companies, restaurants, and more. If you serve customers locally, we can build a site that gets you found.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>What industries do you work with?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">We specialize in local service businesses: plumbers, electricians, roofers, HVAC, painters, landscapers, salons, barbershops, auto repair, dentists, event rentals, restaurants, and more. If you serve local customers, we can build a site that gets you found.</div>
       </div>
       <div class="faq-item" data-reveal="up" data-delay="5">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <span>What if I'm not happy with the result?</span>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-a">You review your site before it ever goes live. If you're not 100% satisfied, we keep revising until you are. And if we can't make you happy before launch, we refund you in full. Zero risk.</div>
+        <div class="faq-q" onclick="toggleFaq(this)"><span>What if I'm not happy with the result?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a">You review the site before it ever goes live. If you're not 100% satisfied, we keep revising until you are. If we genuinely can't make you happy before launch, you get a full refund. Zero risk on your end.</div>
       </div>
     </div>
   </div>
@@ -1129,9 +951,9 @@
   <div class="container">
     <div class="contact-layout">
       <div>
-        <span class="eyebrow">Contact Us</span>
+        <span class="eyebrow">Get Started</span>
         <h2 class="contact-left" data-reveal="up">Ready to get more customers?</h2>
-        <p data-reveal="up" data-delay="1">Book a free 20-minute call. No commitment, no pressure. We'll show you exactly what your site would look like before you pay a single dollar.</p>
+        <p data-reveal="up" data-delay="1">Book a free 20-minute call. We'll show you exactly what your site would look like — no commitment, no pressure, no hard sell.</p>
         <div class="contact-links" data-reveal="up" data-delay="2">
           <a href="https://wa.me/15407838835" target="_blank" class="clink">
             <span class="clink-icon">💬</span>
@@ -1148,38 +970,27 @@
           </div>
         </div>
       </div>
-
       <div data-reveal="right">
         <div class="contact-form">
           <h3>Book your free call</h3>
           <form onsubmit="submitBooking(event)" novalidate>
             <div class="form-row">
-              <div class="form-group">
-                <label>Full name</label>
-                <input type="text" id="book-name" required placeholder="Mike Johnson">
-              </div>
-              <div class="form-group">
-                <label>Phone / WhatsApp</label>
-                <input type="tel" id="book-phone" required placeholder="+1 (555) 000-0000">
-              </div>
+              <div class="form-group"><label>Full name</label><input type="text" id="book-name" required placeholder="Mike Johnson"></div>
+              <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" id="book-phone" required placeholder="+1 (555) 000-0000"></div>
             </div>
             <div class="form-group">
               <label>Business type</label>
               <select id="book-service">
                 <option value="">Select your industry...</option>
-                <option>Plumbing</option><option>Electrical</option>
-                <option>Roofing</option><option>HVAC</option>
-                <option>Painting</option><option>Landscaping</option>
+                <option>Plumbing</option><option>Electrical</option><option>Roofing</option>
+                <option>HVAC</option><option>Painting</option><option>Landscaping</option>
                 <option>Salon / Barbershop</option><option>Auto Repair</option>
                 <option>Event Rentals</option><option>Restaurant</option>
                 <option>Dental / Medical</option><option>Law Firm</option><option>Other</option>
               </select>
             </div>
             <div class="form-row">
-              <div class="form-group">
-                <label>Preferred date</label>
-                <input type="date" id="book-date">
-              </div>
+              <div class="form-group"><label>Preferred date</label><input type="date" id="book-date"></div>
               <div class="form-group">
                 <label>Preferred time</label>
                 <select id="book-time">
@@ -1190,8 +1001,8 @@
                 </select>
               </div>
             </div>
-            <button type="submit" class="btn btn-orange btn-lg form-submit-btn">💬 Send via WhatsApp →</button>
-            <p class="form-footnote">Guaranteed response in under 1 hour. Available 24/7.</p>
+            <button type="submit" class="btn btn-orange btn-lg form-submit-btn">Book via WhatsApp →</button>
+            <p class="form-footnote">We respond in under 1 hour. Available 24/7.</p>
           </form>
         </div>
       </div>
@@ -1200,15 +1011,16 @@
 </section>
 
 <!-- FINAL CTA -->
-<section class="cta-minimal">
+<section class="cta-section">
   <div class="container">
-    <div class="cta-minimal-inner" data-reveal="up">
-      <h2>Got a project? Let's talk.</h2>
-      <div class="cta-minimal-btns">
-        <a href="https://wa.me/15407838835" target="_blank" class="cta-arrow-link">
-          Talk to an expert <span class="cta-arrow">↗</span>
-        </a>
-        <a href="https://wa.me/15407838835" target="_blank" class="btn btn-orange btn-lg">WhatsApp now</a>
+    <div class="cta-inner" data-reveal="up">
+      <div>
+        <h2>Ready to grow your business?</h2>
+        <p>See what your site would look like before you pay anything. Free call, no commitment.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="#contact" class="btn btn-ghost-white btn-lg">See a preview first</a>
+        <a href="https://wa.me/15407838835" target="_blank" class="btn btn-orange btn-lg">Talk to us now</a>
       </div>
     </div>
   </div>
@@ -1219,11 +1031,8 @@
   <div class="container">
     <div class="footer-top">
       <div>
-        <div class="footer-logo">
-          <span class="logo-icon">K</span>
-          <span>kalnyesgrowth</span>
-        </div>
-        <p class="footer-tagline">Your website is never done. We keep optimizing.</p>
+        <div class="footer-logo"><span class="logo-icon">K</span><span>kalnyesgrowth</span></div>
+        <p class="footer-tagline">Your website is never truly finished. We keep improving it.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -1244,14 +1053,10 @@
         <h4>Contact</h4>
         <a href="mailto:kalnyesgrowth@gmail.com">kalnyesgrowth@gmail.com</a>
         <a href="https://wa.me/15407838835" target="_blank">WhatsApp</a>
-        <a href="#contact">🗓 Book a Call</a>
+        <a href="#contact">🗓 Book a Free Call</a>
       </div>
     </div>
-
-    <div class="footer-wordmark">
-      <div class="footer-wordmark-text">kalnyesgrowth</div>
-    </div>
-
+    <div class="footer-wordmark"><div class="footer-wordmark-text">kalnyesgrowth</div></div>
     <div class="footer-bottom">
       <p>© 2026 Kalnyesgrowth · All Rights Reserved</p>
       <p>Your website is never done.</p>
@@ -1259,19 +1064,19 @@
   </div>
 </footer>
 
-<!-- SCRIPTS -->
 <script>
+  /* NAV */
   function toggleMenu() {
     const m = document.getElementById('mobileMenu');
     m.classList.toggle('open');
     document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
   }
   function closeMenu() {
-    const m = document.getElementById('mobileMenu');
-    m.classList.remove('open');
+    document.getElementById('mobileMenu').classList.remove('open');
     document.body.style.overflow = '';
   }
 
+  /* FAQ */
   function toggleFaq(el) {
     const item = el.parentElement;
     const wasOpen = item.classList.contains('open');
@@ -1279,6 +1084,7 @@
     if (!wasOpen) item.classList.add('open');
   }
 
+  /* FORM */
   function submitBooking(e) {
     e.preventDefault();
     const name    = document.getElementById('book-name').value.trim();
@@ -1286,65 +1092,55 @@
     const service = document.getElementById('book-service').value;
     const date    = document.getElementById('book-date').value;
     const time    = document.getElementById('book-time').value;
-    const dateStr = date ? new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' }) : '';
-    const msg = `Hi! I'd like to book a free consultation.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Business type:* ${service}\n*Preferred date:* ${dateStr}\n*Preferred time:* ${time}\n\nThanks!`;
-    window.open(`https://wa.me/15407838835?text=${encodeURIComponent(msg)}`, '_blank');
+    const dateStr = date ? new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' }) : 'TBD';
+    const msg = `Hi! I'd like to book a free consultation.\n\nName: ${name}\nPhone: ${phone}\nBusiness: ${service}\nDate: ${dateStr}\nTime: ${time}\n\nThanks!`;
+    window.open('https://wa.me/15407838835?text=' + encodeURIComponent(msg), '_blank');
   }
 
+  /* TESTIMONIALS */
   const TESTS = [
-    {
-      quote: "Before Kalnyesgrowth we were completely invisible online. Within 3 weeks of launch we had 12 new customers reach out through the site alone. We made back the investment in the first month.",
-      name: 'Mike Johnson', biz: 'Johnson Plumbing Services · Houston, TX',
-      img: 'https://i.pravatar.cc/80?img=15'
-    },
-    {
-      quote: "I was relying on Instagram and word of mouth. Now Google brings me new clients every single day. My booking calendar has been full two weeks out ever since the site launched.",
-      name: 'Ashley Williams', biz: 'Luxe Beauty Studio · Dallas, TX',
-      img: 'https://i.pravatar.cc/80?img=44'
-    },
-    {
-      quote: "Got my first new contract from Google within 48 hours of going live. The website paid for itself that same week. If you own a business and don't have a site, you're leaving money on the table every single day.",
-      name: 'Chris Davis', biz: 'ProShield Roofing · Miami, FL',
-      img: 'https://i.pravatar.cc/80?img=8'
-    }
+    { quote: "Before Kalnyesgrowth we were completely invisible online. Within 3 weeks of launch we had 12 new customers reach out through the site alone. We made back the investment in the first month — and we're still getting leads every week.", name: 'Mike Johnson', biz: 'Johnson Plumbing Services · Houston, TX', img: 'https://i.pravatar.cc/80?img=15' },
+    { quote: "I was relying on Instagram and word of mouth. Now Google brings me new clients every single day without me doing anything. My booking calendar has been full two weeks out ever since the site launched.", name: 'Ashley Williams', biz: 'Luxe Beauty Studio · Dallas, TX', img: 'https://i.pravatar.cc/80?img=44' },
+    { quote: "Got my first new contract from Google within 48 hours of going live. The website paid for itself that same week. If you own a business and don't have a professional site, you are losing money every single day.", name: 'Chris Davis', biz: 'ProShield Roofing · Miami, FL', img: 'https://i.pravatar.cc/80?img=8' }
   ];
   let currentTest = 0;
-
   function showTest(i) {
     currentTest = i;
     const t = TESTS[i];
     document.getElementById('test-quote').textContent = t.quote;
-    document.getElementById('test-name').textContent  = t.name;
-    document.getElementById('test-biz').textContent   = t.biz;
+    document.getElementById('test-name').textContent = t.name;
+    document.getElementById('test-biz').textContent = t.biz;
     document.getElementById('test-img').src = t.img;
     document.getElementById('test-img').alt = t.name;
     document.querySelectorAll('.test-dot').forEach((d,j) => d.classList.toggle('active', j === i));
   }
 
+  /* INIT */
   document.addEventListener('DOMContentLoaded', () => {
     const d = document.getElementById('book-date');
     if (d) d.min = new Date().toISOString().split('T')[0];
-    initReveal();
+
     window.addEventListener('scroll', () => {
       document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
-  });
 
-  function initReveal() {
+    /* Scroll reveal — only for below-fold elements */
     const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) { entry.target.classList.add('revealed'); io.unobserve(entry.target); }
-      });
-    }, { threshold: 0.1 });
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
     document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
 
+    /* Fallback: force-reveal anything not triggered after 1.5s (handles local file:// quirks) */
+    setTimeout(() => {
+      document.querySelectorAll('[data-reveal]:not(.revealed)').forEach(el => el.classList.add('revealed'));
+    }, 1500);
+
+    /* Chart animations */
     const chartIo = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) { entry.target.classList.add('chart-active'); chartIo.unobserve(entry.target); }
-      });
-    }, { threshold: 0.3 });
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('chart-active'); chartIo.unobserve(e.target); } });
+    }, { threshold: 0.25 });
     document.querySelectorAll('.money-card').forEach(el => chartIo.observe(el));
-  }
+  });
 </script>
 </body>
 </html>
