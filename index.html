@@ -219,7 +219,7 @@
 
     /* Mobile menu */
     .mobile-menu {
-      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99;
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 101;
       background: rgba(10,10,10,0.96); flex-direction: column; align-items: center; justify-content: center;
       gap: 32px; text-align: center;
     }
@@ -227,10 +227,15 @@
     .mobile-menu a { font-size: 1.4rem; font-family: var(--font-d); font-weight: 700; color: var(--white); }
     .mobile-menu a:hover { color: var(--gold); }
     .mobile-menu .m-close {
-      position: absolute; top: 20px; right: 24px;
-      font-size: 1.6rem; cursor: pointer; color: var(--gray);
-      background: none; border: none;
+      position: absolute; top: 20px; right: 20px;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; line-height: 1; cursor: pointer;
+      color: #ffffff; background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2); border-radius: 50%;
+      transition: background var(--trans);
     }
+    .mobile-menu .m-close:hover { background: rgba(255,255,255,0.2); }
     .mobile-menu .m-call {
       margin-top: 16px; background: var(--red); padding: 14px 40px;
       border-radius: 8px; font-size: 1rem; font-family: var(--font); font-weight: 700;
@@ -240,11 +245,16 @@
        HERO
     ═══════════════════════════════════════ */
     /* ═══ FULL-PAGE SCROLL-DRIVEN VIDEO ═══ */
-    /* Fixed behind every section — z-index -2 puts it below everything */
-    .page-video {
+    /* Fixed wrapper — iOS Safari can't render position:fixed directly on <video> */
+    .page-video-wrap {
       position: fixed; inset: 0;
+      z-index: -2; overflow: hidden;
+      pointer-events: none;
+    }
+    .page-video {
+      position: absolute; inset: 0;
       width: 100%; height: 100%;
-      object-fit: cover; z-index: -2;
+      object-fit: cover;
     }
     #page-video-desktop { display: block; }
     #page-video-mobile  { display: none;  }
@@ -680,8 +690,16 @@
 <body>
 
 <!-- Full-page scroll-driven video — fixed behind every section -->
-<video id="page-video-desktop" class="page-video" src="hero-desktop.mp4" muted playsinline preload="auto" aria-hidden="true"></video>
-<video id="page-video-mobile"  class="page-video" src="hero-mobile.mp4"  muted playsinline preload="auto" aria-hidden="true"></video>
+<div class="page-video-wrap" aria-hidden="true">
+  <video id="page-video-desktop" class="page-video"
+         src="hero-desktop.mp4"
+         muted autoplay playsinline webkit-playsinline
+         preload="auto"></video>
+  <video id="page-video-mobile" class="page-video"
+         src="hero-mobile.mp4"
+         muted autoplay playsinline webkit-playsinline
+         preload="auto"></video>
+</div>
 <div id="page-overlay" aria-hidden="true"></div>
 
 <!-- Hidden checkbox — CSS-only age gate dismiss, no JavaScript needed -->
@@ -1468,24 +1486,36 @@
     function scrub(){
       rafPending = false;
       var vid = activeVid();
-      if(!vid || !vid.duration || vid.readyState < 2) return;
+      if(!vid || !vid.duration) return;
 
       var scrollMax = document.body.scrollHeight - window.innerHeight;
       if(scrollMax <= 0) return;
 
-      var progress  = Math.min(1, window.scrollY / scrollMax);
-      vid.currentTime = progress * vid.duration;
+      var progress     = Math.min(1, window.scrollY / scrollMax);
+      vid.currentTime  = progress * vid.duration;
     }
 
     window.addEventListener('scroll', function(){
       if(!rafPending){ rafPending = true; requestAnimationFrame(scrub); }
     }, { passive: true });
 
-    [vidDk, vidMb].forEach(function(v){
+    function initVid(v){
       if(!v) return;
+      /* play() forces mobile browsers to decode + paint the first frame,
+         then we immediately pause and hand time control to scroll */
+      var p = v.play();
+      if(p !== undefined){
+        p.then(function(){ v.pause(); scrub(); })
+         .catch(function(){
+           /* autoplay blocked — still listen for metadata and scrub on first scroll */
+           v.addEventListener('canplay', function(){ v.pause(); scrub(); }, { once: true });
+         });
+      }
       v.addEventListener('loadedmetadata', scrub);
-      v.pause();
-    });
+    }
+
+    initVid(vidDk);
+    initVid(vidMb);
   })();
 
   /* ── Scroll reveal ── */
